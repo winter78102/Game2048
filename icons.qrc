@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>resources/UP.JPG</file>
+        <file>resources/Down.JPG</file>
+        <file>resources/Right.JPG</file>
+        <file>resources/Left.JPG</file>
+    </qresource>
+</RCC>

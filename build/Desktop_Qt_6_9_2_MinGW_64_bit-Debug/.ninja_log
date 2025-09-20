@@ -1,0 +1,21 @@
+# ninja log v6
+18	3322	7800740360648022	build.ninja	448490af8d7e6cf7
+18	3322	7800740360568032	C:/Users/Bahar/Documents/Game/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/cmake_install.cmake	448490af8d7e6cf7
+4609	4751	7798087661956326	Game_autogen/EWIEGA46WW/qrc_icons.cpp	1bdd87a5e65011fb
+196	1555	7800723917737119	Game_autogen/timestamp	330a6dd0c66ffbc9
+196	1555	7800723917737119	C:/Users/Bahar/Documents/Game/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/Game_autogen/timestamp	330a6dd0c66ffbc9
+196	1555	7800723917737119	Game_autogen/mocs_compilation.cpp	330a6dd0c66ffbc9
+196	1555	7800723917737119	C:/Users/Bahar/Documents/Game/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/Game_autogen/mocs_compilation.cpp	330a6dd0c66ffbc9
+4609	4751	7798087661956326	C:/Users/Bahar/Documents/Game/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/Game_autogen/EWIEGA46WW/qrc_icons.cpp	1bdd87a5e65011fb
+1565	2002	7800723918525931	CMakeFiles/Game.dir/UpActions.cpp.obj	307a786e1715f2ce
+318	452	7800718764375418	CMakeFiles/Game.dir/game.cpp.obj	5975268ba12ccfe2
+1578	1991	7800723918715943	CMakeFiles/Game.dir/LeftAction.cpp.obj	da4ada78fe60374e
+1594	1967	7800723918821101	CMakeFiles/Game.dir/Actions.cpp.obj	e3490c9509014249
+4787	5717	7798087662606314	CMakeFiles/Game.dir/Game_autogen/EWIEGA46WW/qrc_icons.cpp.obj	3616af901017926f
+1569	2013	7800723918565930	CMakeFiles/Game.dir/DownAction.cpp.obj	33773083098bef73
+1573	1989	7800723918606189	CMakeFiles/Game.dir/RightAction.cpp.obj	413b03559b60d50d
+1599	5562	7800723918865934	CMakeFiles/Game.dir/mainwindow.cpp.obj	27af4452494dfd6c
+1557	5142	7800723918445940	CMakeFiles/Game.dir/Game_autogen/mocs_compilation.cpp.obj	eab8a2713f19e7bb
+4782	8815	7798087662556299	CMakeFiles/Game.dir/form.cpp.obj	a56b878fbd19040a
+1603	5171	7800723918905921	CMakeFiles/Game.dir/Main.cpp.obj	a7bda14268734f2
+2958	3204	7800720348927960	Game.exe	6b5e1740a9f05611
