@@ -1,27 +1,29 @@
 #include"LeftAction.h"
-void LeftAction::OprateAction(unsigned int (* Board)[4][4]){
-    int FirstNum,SecoundNum,Flag=0;
-    int Row,Col=0;
+#include <iostream>
+void LeftAction::OprateAction(std::vector<std::vector< int>>& Board){
 
-    for (int i=3; i>=0;i--){
-        for(int j=3;j>=0;j--){
-            if(*Board[i][j]!=0 && Flag==0){
-                FirstNum=*Board[i][j];
-                Row=i;
-                Col=j;
-                Flag+=1;
-            }
-            if(*Board[i][j]!=0 && Flag==1){
-                SecoundNum=*Board[i][j];
-                Flag=0;
-                if(SecoundNum==FirstNum){
-                    *Board[Row][Col]=SecoundNum*2;}
-                else{
-                    *Board[Row][Col-1]=SecoundNum;
-                }
-                *Board[i][j]=0;
+    for (int i = 0; i < 4; i++) {
+        int c = 0;
+        for (int j = 0; j < 4; j++) {
+            if (Board[i][j] != 0) {
+                Board[i][c] = Board[i][j];
+                if (c != j) Board[i][j] = 0;
+                c++;
             }
         }
+        for (int j = c; j < 4; j++) {
+            Board[i][j] = 0;
+        }
     }
+    for (int i = 0; i < 4; i++) {
+        for (int j = 0; j < 4; j++) {
+            if (Board[i][j] == Board[i][j+1] &&j!=3) {
+                Board[i][j] *=2;
+                for(int k=j+1;k<2;k++){
+                    Board[i][k]=Board[i][k+1];
+                }
 
+                }
+            }
+        }
 }

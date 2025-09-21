@@ -3,7 +3,7 @@
 #include "Actions.h"
 class UpAction :public Actions{
 public:
-    void OprateAction(unsigned int (* Board)[4][4])override;
+    void OprateAction(std::vector<std::vector<int>>& Board)override;
 };
 
 #endif // UPACTIONS_H

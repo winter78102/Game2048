@@ -2,12 +2,13 @@
 #define ACTIONS_H
 #include <cstdlib>
 #include <ctime>
+#include<vector>
 
 class Actions{
 public:
      virtual ~Actions() = default;
-    virtual void OprateAction(unsigned int (* Board[4][4]))=0;
-     void Random(unsigned int( *Board[4][4]));
+    virtual void OprateAction(std::vector<std::vector< int>>& Board)=0;
+     void Random(std::vector<std::vector< int>>& Board);
 };
 
 #endif // ACTIONS_H

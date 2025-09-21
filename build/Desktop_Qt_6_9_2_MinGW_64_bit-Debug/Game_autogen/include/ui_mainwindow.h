@@ -44,21 +44,21 @@ public:
     QToolButton *Right;
     QWidget *gridLayoutWidget;
     QGridLayout *gridLayout;
-    QLabel *label_3;
-    QLabel *label_4;
-    QLabel *label_5;
-    QLabel *label_7;
-    QLabel *label;
-    QLabel *label_6;
-    QLabel *label_9;
-    QLabel *label_2;
-    QLabel *label_10;
-    QLabel *label_11;
-    QLabel *label_12;
-    QLabel *label_13;
-    QLabel *label_15;
-    QLabel *label_16;
-    QLabel *label_8;
+    QLabel *cell11;
+    QLabel *cell10;
+    QLabel *cell20;
+    QLabel *cell21;
+    QLabel *cell31;
+    QLabel *cell00;
+    QLabel *cell32;
+    QLabel *cell30;
+    QLabel *cell33;
+    QLabel *cell22;
+    QLabel *cell12;
+    QLabel *cell02;
+    QLabel *cell13;
+    QLabel *cell23;
+    QLabel *cell01;
     QLabel *cell03;
     QStatusBar *statusbar;
     QMenuBar *menuBar;
@@ -67,7 +67,7 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName("MainWindow");
-        MainWindow->resize(393, 251);
+        MainWindow->resize(380, 248);
         QSizePolicy sizePolicy(QSizePolicy::Policy::Preferred, QSizePolicy::Policy::Preferred);
         sizePolicy.setHorizontalStretch(2);
         sizePolicy.setVerticalStretch(0);
@@ -161,80 +161,80 @@ public:
         gridLayout = new QGridLayout(gridLayoutWidget);
         gridLayout->setObjectName("gridLayout");
         gridLayout->setContentsMargins(0, 0, 0, 0);
-        label_3 = new QLabel(gridLayoutWidget);
-        label_3->setObjectName("label_3");
+        cell11 = new QLabel(gridLayoutWidget);
+        cell11->setObjectName("cell11");
 
-        gridLayout->addWidget(label_3, 1, 1, 1, 1);
+        gridLayout->addWidget(cell11, 1, 1, 1, 1);
 
-        label_4 = new QLabel(gridLayoutWidget);
-        label_4->setObjectName("label_4");
+        cell10 = new QLabel(gridLayoutWidget);
+        cell10->setObjectName("cell10");
 
-        gridLayout->addWidget(label_4, 1, 0, 1, 1);
+        gridLayout->addWidget(cell10, 1, 0, 1, 1);
 
-        label_5 = new QLabel(gridLayoutWidget);
-        label_5->setObjectName("label_5");
+        cell20 = new QLabel(gridLayoutWidget);
+        cell20->setObjectName("cell20");
 
-        gridLayout->addWidget(label_5, 2, 0, 1, 1);
+        gridLayout->addWidget(cell20, 2, 0, 1, 1);
 
-        label_7 = new QLabel(gridLayoutWidget);
-        label_7->setObjectName("label_7");
+        cell21 = new QLabel(gridLayoutWidget);
+        cell21->setObjectName("cell21");
 
-        gridLayout->addWidget(label_7, 2, 1, 1, 1);
+        gridLayout->addWidget(cell21, 2, 1, 1, 1);
 
-        label = new QLabel(gridLayoutWidget);
-        label->setObjectName("label");
+        cell31 = new QLabel(gridLayoutWidget);
+        cell31->setObjectName("cell31");
 
-        gridLayout->addWidget(label, 3, 1, 1, 1);
+        gridLayout->addWidget(cell31, 3, 1, 1, 1);
 
-        label_6 = new QLabel(gridLayoutWidget);
-        label_6->setObjectName("label_6");
+        cell00 = new QLabel(gridLayoutWidget);
+        cell00->setObjectName("cell00");
 
-        gridLayout->addWidget(label_6, 0, 0, 1, 1);
+        gridLayout->addWidget(cell00, 0, 0, 1, 1);
 
-        label_9 = new QLabel(gridLayoutWidget);
-        label_9->setObjectName("label_9");
+        cell32 = new QLabel(gridLayoutWidget);
+        cell32->setObjectName("cell32");
 
-        gridLayout->addWidget(label_9, 3, 2, 1, 1);
+        gridLayout->addWidget(cell32, 3, 2, 1, 1);
 
-        label_2 = new QLabel(gridLayoutWidget);
-        label_2->setObjectName("label_2");
+        cell30 = new QLabel(gridLayoutWidget);
+        cell30->setObjectName("cell30");
 
-        gridLayout->addWidget(label_2, 3, 0, 1, 1);
+        gridLayout->addWidget(cell30, 3, 0, 1, 1);
 
-        label_10 = new QLabel(gridLayoutWidget);
-        label_10->setObjectName("label_10");
+        cell33 = new QLabel(gridLayoutWidget);
+        cell33->setObjectName("cell33");
 
-        gridLayout->addWidget(label_10, 3, 3, 1, 1);
+        gridLayout->addWidget(cell33, 3, 3, 1, 1);
 
-        label_11 = new QLabel(gridLayoutWidget);
-        label_11->setObjectName("label_11");
+        cell22 = new QLabel(gridLayoutWidget);
+        cell22->setObjectName("cell22");
 
-        gridLayout->addWidget(label_11, 2, 2, 1, 1);
+        gridLayout->addWidget(cell22, 2, 2, 1, 1);
 
-        label_12 = new QLabel(gridLayoutWidget);
-        label_12->setObjectName("label_12");
+        cell12 = new QLabel(gridLayoutWidget);
+        cell12->setObjectName("cell12");
 
-        gridLayout->addWidget(label_12, 1, 2, 1, 1);
+        gridLayout->addWidget(cell12, 1, 2, 1, 1);
 
-        label_13 = new QLabel(gridLayoutWidget);
-        label_13->setObjectName("label_13");
+        cell02 = new QLabel(gridLayoutWidget);
+        cell02->setObjectName("cell02");
 
-        gridLayout->addWidget(label_13, 0, 2, 1, 1);
+        gridLayout->addWidget(cell02, 0, 2, 1, 1);
 
-        label_15 = new QLabel(gridLayoutWidget);
-        label_15->setObjectName("label_15");
+        cell13 = new QLabel(gridLayoutWidget);
+        cell13->setObjectName("cell13");
 
-        gridLayout->addWidget(label_15, 1, 3, 1, 1);
+        gridLayout->addWidget(cell13, 1, 3, 1, 1);
 
-        label_16 = new QLabel(gridLayoutWidget);
-        label_16->setObjectName("label_16");
+        cell23 = new QLabel(gridLayoutWidget);
+        cell23->setObjectName("cell23");
 
-        gridLayout->addWidget(label_16, 2, 3, 1, 1);
+        gridLayout->addWidget(cell23, 2, 3, 1, 1);
 
-        label_8 = new QLabel(gridLayoutWidget);
-        label_8->setObjectName("label_8");
+        cell01 = new QLabel(gridLayoutWidget);
+        cell01->setObjectName("cell01");
 
-        gridLayout->addWidget(label_8, 0, 1, 1, 1);
+        gridLayout->addWidget(cell01, 0, 1, 1, 1);
 
         cell03 = new QLabel(gridLayoutWidget);
         cell03->setObjectName("cell03");
@@ -247,8 +247,13 @@ public:
         MainWindow->setStatusBar(statusbar);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName("menuBar");
-        menuBar->setGeometry(QRect(0, 0, 393, 21));
+        menuBar->setGeometry(QRect(0, 0, 380, 21));
         MainWindow->setMenuBar(menuBar);
+        QWidget::setTabOrder(Right, UP);
+        QWidget::setTabOrder(UP, Down);
+        QWidget::setTabOrder(Down, toolButton_2);
+        QWidget::setTabOrder(toolButton_2, RIGHT);
+        QWidget::setTabOrder(RIGHT, Left);
 
         retranslateUi(MainWindow);
 
@@ -268,21 +273,21 @@ public:
         UP->setText(QCoreApplication::translate("MainWindow", "...", nullptr));
         Down->setText(QCoreApplication::translate("MainWindow", "...", nullptr));
         Right->setText(QCoreApplication::translate("MainWindow", "...", nullptr));
-        label_3->setText(QCoreApplication::translate("MainWindow", "cell11", nullptr));
-        label_4->setText(QCoreApplication::translate("MainWindow", "cell10", nullptr));
-        label_5->setText(QCoreApplication::translate("MainWindow", "cell20", nullptr));
-        label_7->setText(QCoreApplication::translate("MainWindow", "cell21", nullptr));
-        label->setText(QCoreApplication::translate("MainWindow", "cell31", nullptr));
-        label_6->setText(QCoreApplication::translate("MainWindow", "cell00", nullptr));
-        label_9->setText(QCoreApplication::translate("MainWindow", "cell32", nullptr));
-        label_2->setText(QCoreApplication::translate("MainWindow", "cell30", nullptr));
-        label_10->setText(QCoreApplication::translate("MainWindow", "cell33", nullptr));
-        label_11->setText(QCoreApplication::translate("MainWindow", "cell22", nullptr));
-        label_12->setText(QCoreApplication::translate("MainWindow", "cell12", nullptr));
-        label_13->setText(QCoreApplication::translate("MainWindow", "cell02", nullptr));
-        label_15->setText(QCoreApplication::translate("MainWindow", "cell13", nullptr));
-        label_16->setText(QCoreApplication::translate("MainWindow", "cell23", nullptr));
-        label_8->setText(QCoreApplication::translate("MainWindow", "cell01", nullptr));
+        cell11->setText(QCoreApplication::translate("MainWindow", "cell11", nullptr));
+        cell10->setText(QCoreApplication::translate("MainWindow", "cell10", nullptr));
+        cell20->setText(QCoreApplication::translate("MainWindow", "cell20", nullptr));
+        cell21->setText(QCoreApplication::translate("MainWindow", "cell21", nullptr));
+        cell31->setText(QCoreApplication::translate("MainWindow", "cell31", nullptr));
+        cell00->setText(QCoreApplication::translate("MainWindow", "cell00", nullptr));
+        cell32->setText(QCoreApplication::translate("MainWindow", "cell32", nullptr));
+        cell30->setText(QCoreApplication::translate("MainWindow", "cell30", nullptr));
+        cell33->setText(QCoreApplication::translate("MainWindow", "cell33", nullptr));
+        cell22->setText(QCoreApplication::translate("MainWindow", "cell22", nullptr));
+        cell12->setText(QCoreApplication::translate("MainWindow", "cell12", nullptr));
+        cell02->setText(QCoreApplication::translate("MainWindow", "cell02", nullptr));
+        cell13->setText(QCoreApplication::translate("MainWindow", "cell13", nullptr));
+        cell23->setText(QCoreApplication::translate("MainWindow", "cell23", nullptr));
+        cell01->setText(QCoreApplication::translate("MainWindow", "cell01", nullptr));
         cell03->setText(QCoreApplication::translate("MainWindow", "cell03", nullptr));
     } // retranslateUi
 

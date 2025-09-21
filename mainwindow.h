@@ -21,9 +21,11 @@ public  slots:
     void MoveRight();
     void MoveUp();
     void MoveDown();
+    void DefineCells();
 
 private:
     Ui::MainWindow *ui;
-  Game* _Game = nullptr;
+    Game  _Game;
+    std::vector<std::vector< int> > _Grid;
 };
 #endif // MAINWINDOW_H

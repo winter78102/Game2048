@@ -5,18 +5,22 @@
 #include "DownAction.h"
 #include "LeftAction.h"
 #include "RightAction.h"
+#include<vector>
+#include <iostream>
 class  Game
 {
 public:
-
+    Game();
     void StartPlay();
     void Right();
     void Left();
     void Up();
     void Down();
- auto  GetUpdatedBoard();
+ std::vector<std::vector< int> > GetUpdatedBoard();
 private:
-    unsigned int _Board[4][4]={0};
+
+ std::vector<std::vector< int> > _Board;
+
 };
 
 #endif // GAME_H
