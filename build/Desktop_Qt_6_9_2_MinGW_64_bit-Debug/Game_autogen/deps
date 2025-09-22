@@ -596,28 +596,28 @@ Game_autogen/timestamp: \
 	C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h \
 	C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
 	C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wctype.h \
-	C:/Users/Bahar/Documents/Game/Actions.cpp \
-	C:/Users/Bahar/Documents/Game/Actions.h \
 	C:/Users/Bahar/Documents/Game/CMakeLists.txt \
-	C:/Users/Bahar/Documents/Game/DownAction.cpp \
-	C:/Users/Bahar/Documents/Game/DownAction.h \
-	C:/Users/Bahar/Documents/Game/LeftAction.cpp \
-	C:/Users/Bahar/Documents/Game/LeftAction.h \
-	C:/Users/Bahar/Documents/Game/Main.cpp \
-	C:/Users/Bahar/Documents/Game/RightAction.cpp \
-	C:/Users/Bahar/Documents/Game/RightAction.h \
-	C:/Users/Bahar/Documents/Game/UpActions.cpp \
-	C:/Users/Bahar/Documents/Game/UpActions.h \
 	C:/Users/Bahar/Documents/Game/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/.qtc/package-manager/auto-setup.cmake \
 	C:/Users/Bahar/Documents/Game/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/.qtc/package-manager/maintenance_tool_provider.cmake \
 	C:/Users/Bahar/Documents/Game/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/CMakeFiles/4.1.0/CMakeCXXCompiler.cmake \
 	C:/Users/Bahar/Documents/Game/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/CMakeFiles/4.1.0/CMakeRCCompiler.cmake \
 	C:/Users/Bahar/Documents/Game/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/CMakeFiles/4.1.0/CMakeSystem.cmake \
 	C:/Users/Bahar/Documents/Game/build/Desktop_Qt_6_9_2_MinGW_64_bit-Debug/Game_autogen/moc_predefs.h \
-	C:/Users/Bahar/Documents/Game/game.cpp \
-	C:/Users/Bahar/Documents/Game/game.h \
 	C:/Users/Bahar/Documents/Game/icons.qrc \
-	C:/Users/Bahar/Documents/Game/mainwindow.cpp \
-	C:/Users/Bahar/Documents/Game/mainwindow.h \
-	C:/Users/Bahar/Documents/Game/mainwindow.ui \
+	C:/Users/Bahar/Documents/Game/include/Action/Actions.h \
+	C:/Users/Bahar/Documents/Game/include/Action/DownAction/DownAction.h \
+	C:/Users/Bahar/Documents/Game/include/Action/LeftAction/LeftAction.h \
+	C:/Users/Bahar/Documents/Game/include/Action/RightAction/RightAction.h \
+	C:/Users/Bahar/Documents/Game/include/Action/UpAction/UpActions.h \
+	C:/Users/Bahar/Documents/Game/include/Game/Game_global.h \
+	C:/Users/Bahar/Documents/Game/include/Game/game.h \
+	C:/Users/Bahar/Documents/Game/include/Mainwindow/mainwindow.h \
+	C:/Users/Bahar/Documents/Game/src/Actions.cpp \
+	C:/Users/Bahar/Documents/Game/src/DownAction.cpp \
+	C:/Users/Bahar/Documents/Game/src/LeftAction.cpp \
+	C:/Users/Bahar/Documents/Game/src/Main.cpp \
+	C:/Users/Bahar/Documents/Game/src/RightAction.cpp \
+	C:/Users/Bahar/Documents/Game/src/UpActions.cpp \
+	C:/Users/Bahar/Documents/Game/src/game.cpp \
+	C:/Users/Bahar/Documents/Game/src/mainwindow.cpp \
 	C:/Program\ Files/CMake/bin/cmake.exe

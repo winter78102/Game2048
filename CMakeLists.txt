@@ -1,40 +1,40 @@
-cmake_minimum_required(VERSION 3.16)
+cmake_minimum_required(VERSION 3.30)
 project(Game LANGUAGES CXX)
 
-set(CMAKE_AUTOUIC ON)
-set(CMAKE_AUTOMOC ON)
-set(CMAKE_AUTORCC ON)
-set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+set(CMAKE_AUTOMOC ON)
+
+set(CMAKE_AUTORCC ON)
 
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Core Widgets Gui)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core Widgets Gui)
 
-add_executable(Game
-  # core
-  game.cpp
-  game.h
-  Actions.h
-  UpActions.h
-  UpActions.cpp
-  DownAction.h
-  DownAction.cpp
-  RightAction.h
-  RightAction.cpp
-  LeftAction.h
-  LeftAction.cpp
-  Actions.cpp
-  # ui
-
-  # resources
-  icons.qrc
-  mainwindow.h mainwindow.cpp mainwindow.ui
-  Main.cpp
-  .gitignore
+file(GLOB_RECURSE SOURCES CONFIGURE_DEPENDS
+    src/*.cpp
 )
 
-target_link_libraries(Game PRIVATE
-  Qt${QT_VERSION_MAJOR}::Core
-  Qt${QT_VERSION_MAJOR}::Gui
-  Qt${QT_VERSION_MAJOR}::Widgets
+file(GLOB_RECURSE HEADERS CONFIGURE_DEPENDS
+    include/*.h
+)
+file(GLOB_RECURSE UI CONFIGURE_DEPENDS
+    *.ui
+)
+file(GLOB_RECURSE QRC CONFIGURE_DEPENDS
+    *.qrc
+)
+
+add_executable(${PROJECT_NAME}
+    ${SOURCES} ${HEADERS} ${UI} ${QRC}
+)
+
+target_include_directories(${PROJECT_NAME} PRIVATE
+    ${PROJECT_SOURCE_DIR}/include
+)
+
+target_link_libraries(${PROJECT_NAME} PRIVATE
+    Qt${QT_VERSION_MAJOR}::Core
+    Qt${QT_VERSION_MAJOR}::Gui
+    Qt${QT_VERSION_MAJOR}::Widgets
 )

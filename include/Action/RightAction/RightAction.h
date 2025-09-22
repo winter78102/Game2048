@@ -1,6 +1,6 @@
 #ifndef RIGHTACTION_H
 #define RIGHTACTION_H
-#include "Actions.h"
+#include <Action/Actions.h>
 class RightAction :public Actions{
 public:
     void OprateAction(std::vector<std::vector<int>>& Board)override;

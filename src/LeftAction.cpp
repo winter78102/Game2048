@@ -1,4 +1,4 @@
-#include"LeftAction.h"
+#include <Action/LeftAction/LeftAction.h>
 #include <iostream>
 void LeftAction::OprateAction(std::vector<std::vector< int>>& Board){
 

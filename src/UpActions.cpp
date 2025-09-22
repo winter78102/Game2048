@@ -1,4 +1,4 @@
-#include "UpActions.h"
+#include <Action/UpAction/UpActions.h>
 
 void UpAction::OprateAction(std::vector<std::vector<int>>& Board){
     for (int i = 0; i < 4; i++) {

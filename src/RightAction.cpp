@@ -1,4 +1,4 @@
-#include "RightAction.h"
+#include <Action/RightAction/RightAction.h>
 
 void RightAction::OprateAction(std::vector<std::vector< int>>& Board){
     for (int i = 0; i < 4; i++) {

@@ -1,10 +1,10 @@
 #ifndef GAME_H
 #define GAME_H
-#include"Actions.h"
-#include "UpActions.h"
-#include "DownAction.h"
-#include "LeftAction.h"
-#include "RightAction.h"
+#include <Action/Actions.h>
+#include <Action/UpAction/UpActions.h>
+#include <Action/DownAction/DownAction.h>
+#include <Action/LeftAction/LeftAction.h>
+#include <Action/RightAction/RightAction.h>
 #include<vector>
 #include <iostream>
 class  Game

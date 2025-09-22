@@ -1,4 +1,53 @@
 {
+	"globsDependent" : 
+	[
+		{
+			"expression" : "C:/Users/Bahar/Documents/Game/*.qrc",
+			"paths" : 
+			[
+				"C:/Users/Bahar/Documents/Game/icons.qrc"
+			],
+			"recurse" : true
+		},
+		{
+			"expression" : "C:/Users/Bahar/Documents/Game/*.ui",
+			"paths" : 
+			[
+				"C:/Users/Bahar/Documents/Game/mainwindow.ui"
+			],
+			"recurse" : true
+		},
+		{
+			"expression" : "C:/Users/Bahar/Documents/Game/include/*.h",
+			"paths" : 
+			[
+				"C:/Users/Bahar/Documents/Game/include/Action/Actions.h",
+				"C:/Users/Bahar/Documents/Game/include/Action/DownAction/DownAction.h",
+				"C:/Users/Bahar/Documents/Game/include/Action/LeftAction/LeftAction.h",
+				"C:/Users/Bahar/Documents/Game/include/Action/RightAction/RightAction.h",
+				"C:/Users/Bahar/Documents/Game/include/Action/UpAction/UpActions.h",
+				"C:/Users/Bahar/Documents/Game/include/Game/Game_global.h",
+				"C:/Users/Bahar/Documents/Game/include/Game/game.h",
+				"C:/Users/Bahar/Documents/Game/include/Mainwindow/mainwindow.h"
+			],
+			"recurse" : true
+		},
+		{
+			"expression" : "C:/Users/Bahar/Documents/Game/src/*.cpp",
+			"paths" : 
+			[
+				"C:/Users/Bahar/Documents/Game/src/Actions.cpp",
+				"C:/Users/Bahar/Documents/Game/src/DownAction.cpp",
+				"C:/Users/Bahar/Documents/Game/src/LeftAction.cpp",
+				"C:/Users/Bahar/Documents/Game/src/Main.cpp",
+				"C:/Users/Bahar/Documents/Game/src/RightAction.cpp",
+				"C:/Users/Bahar/Documents/Game/src/UpActions.cpp",
+				"C:/Users/Bahar/Documents/Game/src/game.cpp",
+				"C:/Users/Bahar/Documents/Game/src/mainwindow.cpp"
+			],
+			"recurse" : true
+		}
+	],
 	"inputs" : 
 	[
 		{

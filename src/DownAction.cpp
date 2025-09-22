@@ -1,4 +1,4 @@
-#include "DownAction.h"
+#include <Action/DownAction/DownAction.h>
 
 void DownAction::OprateAction(std::vector<std::vector<int>>& Board){
     for (int i = 0; i < 4; i++) {

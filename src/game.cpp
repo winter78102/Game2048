@@ -1,4 +1,4 @@
-#include "game.h"
+#include <Game/game.h>
 Game::Game():_Board(4, std::vector< int>(4, 0)){}
 
 void Game::StartPlay(){
