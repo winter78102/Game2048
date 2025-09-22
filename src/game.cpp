@@ -4,6 +4,7 @@ Game::Game():_Board(4, std::vector< int>(4, 0)){}
 void Game::StartPlay(){
     UpAction* Action = new UpAction();
     Action->Random(_Board);
+    Action->Random(_Board);
     delete Action;
 }
 void Game::Up(){
