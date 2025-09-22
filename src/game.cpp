@@ -2,44 +2,26 @@
 Game::Game():_Board(4, std::vector< int>(4, 0)){}
 
 void Game::StartPlay(){
-    UpAction* Action = new UpAction();
-    Action->Random(_Board);
-    Action->Random(_Board);
-    delete Action;
+    _Move.Random(_Board);
+    _Move.Random(_Board);
+
 }
 void Game::Up(){
-    UpAction* Action = new UpAction();
-    Action->OprateAction(_Board);
-    Action->Random(_Board);
-    delete Action;
+    _Move.UpAction(_Board);
+    _Move.Random(_Board);
 }
 void Game::Down(){
-    DownAction* Action = new DownAction();
-    Action->OprateAction(_Board);
-    Action->Random(_Board);
-    delete Action;
+    _Move.DownAction(_Board);
+    _Move.Random(_Board);
 }
 void Game::Left(){
-    LeftAction* Action = new LeftAction();
-    Action->OprateAction(_Board);
-    for (int i = 0; i < 4; i++) {
-        for(int j=0;j<4;j++){
-            std::cout<<  _Board[i][j]<<"  ";
-        }
-        std::cout<<std::endl;
-    }
-    std::cout<<std::endl;
-    std::cout<<std::endl;
-
-     Action->Random(_Board);
-    delete Action;
+    _Move.LeftAction(_Board);
+    _Move.Random(_Board);
 
 }
 void Game::Right(){
-    RightAction* Action = new RightAction();
-    Action->OprateAction(_Board);
-     Action->Random(_Board);
-    delete Action;
+    _Move.RightAction(_Board);
+    _Move.Random(_Board);
 }
 std::vector<std::vector< int> >  Game::GetUpdatedBoard(){
     return _Board;

@@ -1,10 +1,6 @@
 #ifndef GAME_H
 #define GAME_H
-#include <Action/Actions.h>
-#include <Action/UpAction/UpActions.h>
-#include <Action/DownAction/DownAction.h>
-#include <Action/LeftAction/LeftAction.h>
-#include <Action/RightAction/RightAction.h>
+#include <Move/Move.h>
 #include<vector>
 #include <iostream>
 class  Game
@@ -18,7 +14,7 @@ public:
     void Down();
  std::vector<std::vector< int> > GetUpdatedBoard();
 private:
-
+ Move _Move;
  std::vector<std::vector< int> > _Board;
 
 };
