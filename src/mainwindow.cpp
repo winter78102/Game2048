@@ -1,6 +1,7 @@
 #include <Mainwindow/mainwindow.h>
 #include "ui_mainwindow.h"
 #include <QString>
+#include <QShortcut>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -13,8 +14,20 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->Left,  &QToolButton::clicked, this, &MainWindow::MoveLeft);
     connect(ui->Right, &QToolButton::clicked, this, &MainWindow::MoveRight);
     connect(ui->UP,    &QToolButton::clicked, this, &MainWindow::MoveUp);
-    connect(ui->Down, &QToolButton::clicked, this, &MainWindow::MoveDown);
+    connect(ui->Down,  &QToolButton::clicked, this, &MainWindow::MoveDown);
 
+
+    QShortcut *shortcutLeft  = new QShortcut(QKeySequence(Qt::Key_Left), this);
+    connect(shortcutLeft,  &QShortcut::activated, this, &MainWindow::MoveLeft);
+
+    QShortcut *shortcutRight = new QShortcut(QKeySequence(Qt::Key_Right), this);
+    connect(shortcutRight, &QShortcut::activated, this, &MainWindow::MoveRight);
+
+    QShortcut *shortcutUp    = new QShortcut(QKeySequence(Qt::Key_Up), this);
+    connect(shortcutUp,    &QShortcut::activated, this, &MainWindow::MoveUp);
+
+    QShortcut *shortcutDown  = new QShortcut(QKeySequence(Qt::Key_Down), this);
+    connect(shortcutDown,  &QShortcut::activated, this, &MainWindow::MoveDown);
 }
 MainWindow::~MainWindow()
 {
