@@ -1,59 +1,58 @@
-#include <Mainwindow/mainwindow.h>
-#include "ui_mainwindow.h"
-#include <QString>
 #include <QShortcut>
+#include <QString>
+#include "ui_mainwindow.h"
+#include <Mainwindow/mainwindow.h>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    _Game.StartPlay();
-    _Grid=_Game.GetUpdatedBoard();
+    _Game.StartPlay(_Grid );
     DefineCells();
-    connect(ui->Left,  &QToolButton::clicked, this, &MainWindow::MoveLeft);
+    connect(ui->Left, &QToolButton::clicked, this, &MainWindow::MoveLeft);
     connect(ui->Right, &QToolButton::clicked, this, &MainWindow::MoveRight);
-    connect(ui->UP,    &QToolButton::clicked, this, &MainWindow::MoveUp);
-    connect(ui->Down,  &QToolButton::clicked, this, &MainWindow::MoveDown);
+    connect(ui->UP, &QToolButton::clicked, this, &MainWindow::MoveUp);
+    connect(ui->Down, &QToolButton::clicked, this, &MainWindow::MoveDown);
 
-
-    QShortcut *shortcutLeft  = new QShortcut(QKeySequence(Qt::Key_Left), this);
-    connect(shortcutLeft,  &QShortcut::activated, this, &MainWindow::MoveLeft);
+    QShortcut *shortcutLeft = new QShortcut(QKeySequence(Qt::Key_Left), this);
+    connect(shortcutLeft, &QShortcut::activated, this, &MainWindow::MoveLeft);
 
     QShortcut *shortcutRight = new QShortcut(QKeySequence(Qt::Key_Right), this);
     connect(shortcutRight, &QShortcut::activated, this, &MainWindow::MoveRight);
 
-    QShortcut *shortcutUp    = new QShortcut(QKeySequence(Qt::Key_Up), this);
-    connect(shortcutUp,    &QShortcut::activated, this, &MainWindow::MoveUp);
+    QShortcut *shortcutUp = new QShortcut(QKeySequence(Qt::Key_Up), this);
+    connect(shortcutUp, &QShortcut::activated, this, &MainWindow::MoveUp);
 
-    QShortcut *shortcutDown  = new QShortcut(QKeySequence(Qt::Key_Down), this);
-    connect(shortcutDown,  &QShortcut::activated, this, &MainWindow::MoveDown);
+    QShortcut *shortcutDown = new QShortcut(QKeySequence(Qt::Key_Down), this);
+    connect(shortcutDown, &QShortcut::activated, this, &MainWindow::MoveDown);
 }
 MainWindow::~MainWindow()
 {
     delete ui;
 }
-void MainWindow::MoveLeft(){
-    _Game.Left();
-    _Grid=_Game.GetUpdatedBoard();
+void MainWindow::MoveLeft()
+{
+    _Game.Left(_Grid);
     DefineCells();
 }
-void MainWindow::MoveDown(){
-    _Game.Down();
-    _Grid=_Game.GetUpdatedBoard();
+void MainWindow::MoveDown()
+{
+    _Game.Down(_Grid);
     DefineCells();
 }
-void MainWindow::MoveUp(){
-    _Game.Up();
-    _Grid=_Game.GetUpdatedBoard();
-     DefineCells();
+void MainWindow::MoveUp()
+{
+    _Game.Up(_Grid);
+    DefineCells();
 }
-void MainWindow::MoveRight(){
-    _Game.Right();
-    _Grid=_Game.GetUpdatedBoard();
-     DefineCells();
+void MainWindow::MoveRight()
+{
+    _Game.Right(_Grid);
+    DefineCells();
 }
-void MainWindow::DefineCells(){
+void MainWindow::DefineCells()
+{
     ui->cell00->setText(QString::number(_Grid[0][0]));
     ui->cell01->setText(QString::number(_Grid[0][1]));
     ui->cell02->setText(QString::number(_Grid[0][2]));

@@ -7,12 +7,11 @@ class  Game
 {
 public:
     Game();
-    void StartPlay();
-    void Right();
-    void Left();
-    void Up();
-    void Down();
- std::vector<std::vector< int> > GetUpdatedBoard();
+    void StartPlay(std::vector<std::vector< int>>& Board);
+    void Right(std::vector<std::vector< int>>& Board);
+    void Left(std::vector<std::vector< int>>& Board);
+    void Up(std::vector<std::vector< int>>& Board);
+    void Down(std::vector<std::vector< int>>& Board);
 private:
  Move _Move;
  std::vector<std::vector< int> > _Board;
